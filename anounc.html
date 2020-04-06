@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/adminStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .eNews {
+            border-bottom: 1px solid #949494;
+            font-size: 0;
+            padding: 19px 0;
+        }
+
+        .news-link {
+            color: #262626;
+            display: grid;
+            grid-gap: 15px 18px;
+            grid-template-columns: min-content 1fr;
+            text-decoration: none;
+        }
+
+        .news-date {
+            font-size: 25px;
+        }
+
+        [class^="news-cate"] {
+            border-radius: 3px;
+            color: #fff;
+            display: inline-block;
+            font-size: 23px;
+            text-align: center;
+            width: 180px;
+        }
+
+        .news-cate-youtube {
+            background: red;
+        }
+
+        .news-cate-event {
+            background: #536d19;
+        }
+
+        .news-cate-result {
+            background-color: #1976D2;
+        }
+
+        .news-title {
+            font-size: 26px;
+            grid-column: span 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .news-link:hover .news-title,
+        .news-link:focus .news-title {
+            text-decoration: underline;
+        }
+
+        @media (min-width:600px) {
+            .news-link {
+                grid-gap: 22px;
+                grid-template-columns: max-content 100px 1fr;
+            }
+
+            .news-date,
+            [class^="news-cate"] {
+                font-size: 26px;
+            }
+
+            [class^="news-cate"] {
+                width: auto;
+            }
+
+            .news-title {
+                grid-column: auto;
+            }
+        }
+    </style>
+
+    <title>Anouncement</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-primary-menu-box">
+                <div class="header--top-bar">
+
+
+                    <div class="logo-box">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="heading--box-text">
+                <div class="heading-primary">
+                    <span class="heading-primary-main">Anouncement</span>
+                    <span class="heading-primary-sub">Recent Anouncements</span>
+                </div>
+
+            </div>
+
+
+
+        </header>
+        <div class="header--admin-text-box">
+            <a href="index.html" class="header-admin-primary-btn">Home</a>
+            <a href="gallery.html" class="header-admin-primary-btn">Gallery</a>
+            <a href="admis.html" class="header-admin-primary-btn">Admission</a>
+            <a href="about.html" class="header-admin-primary-btn">About Us </a>
+            <a href="achi.html" class="header-admin-primary-btn">Achievement</a>
+            <a href="parent.html" class="header-admin-primary-btn">parent login</a>
+            <a href="teacher.html" class="header-admin-primary-btn">Teacher login</a>
+            <a href="anounc.html" class="header-admin-primary-btn header-admin-primary-btn-active">Anouncement</a>
+            <a href="events.html" class="header-admin-primary-btn">Events</a>
+            <a href="contact.html" class="header-admin-primary-btn">Contact Us</a>
+
+
+
+        </div>
+        <br />
+        <br />
+        <br />
+        <main>
+            <article class="eNews">
+                <a href="" class="news-link">
+                    <time datetime="2020-03-29" class="news-date">2020.03.29</time>
+                    <span class="news-cate-youtube">YouTube</span>
+                    <p class="news-title">New Video On Youtube</p>
+                </a>
+            </article>
+            <article class="eNews">
+                <a href="" class="news-link">
+                    <time datetime="2020-03-28" class="news-date">2020.03.23</time>
+                    <span class="news-cate-event">Classes</span>
+                    <p class="news-title">We Will be conducting Online Classes</p>
+                </a>
+            </article>
+            <article class="eNews">
+                <a href="" class="news-link">
+                    <time datetime="2020-03-30" class="news-date">2020.03.13</time>
+                    <span class="news-cate-event">Affliation</span>
+                    <p class="news-title">Affliation Renewed</p>
+                </a>
+            </article>
+            <article class="eNews">
+                <a href="" class="news-link">
+                    <time datetime="2020-02-14" class="news-date">2020.02.14</time>
+                    <span class="news-cate-result">Twitter</span>
+                    <p class="news-title">10000 Followers on Twitter</p>
+                </a>
+            </article>
+            <article class="eNews">
+                <a href="" class="news-link">
+                    <time datetime="2020-03-30" class="news-date">2020.02.06</time>
+                    <span class="news-cate-result">Sports</span>
+                    <p class="news-title">Inter School Cricket Match</p>
+                </a>
+            </article>
+        </main>
+        <br />
+        <br />
+        <br />
+        <div class="footer">
+            <span class="name">CSS School</span>
+            <ul>Educate to Create</ul>
+            <h3 class="made_by">Made with ♡ by Harsh</h3>
+            <span class="copyright">Copyright © 2020</span>
+            <span class="social-media">
+                <a href="https://www.facebook.com/" class="fa fa-facebook-square">Facebook</a>
+                <a href="https://twitter.com/" class="fa fa-twitter-square">Twitter</a>
+            </span>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
