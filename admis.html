@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <!-- <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script> -->
     <title>Admission</title>
 </head>
 
@@ -54,10 +63,10 @@
 
     <div class="container-fluid">
         <h1 class="text-primary text-center">Student Admissions Form</h1>
-        <form class="form2">
+        <form class="form2" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
             <div class="cont">Please fill details</div>
-            <p type="Name:"><input placeholder="Write your name here.."></input></p>
-            <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+            <p type="Name:"><input placeholder="Write your name here.." name="fname"></input></p>
+            <p type="Email:"><input placeholder="Let us know how to contact you back.." name=fname2></input></p>
             <p type="Age:"><input placeholder="Age"></input></p>
             <p type="Sex"><input placeholder="M/F"></input></p>
             <p type="Class"><input placeholder="Class"></input></p>
@@ -73,7 +82,7 @@
     </br>
 
     <div class="footer">
-        <span class="name">Nitte School</span>
+        <span class="name">CSS School</span>
         <ul>Educate to Create</ul>
         <h3 class="made_by">Made with ♡ by Harsh</h3>
         <span class="copyright">Copyright © 2020</span>
@@ -90,6 +99,7 @@
 
 
 
+    <script src="script.js"></script>
 
 
 
